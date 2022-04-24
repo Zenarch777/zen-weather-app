@@ -1,0 +1,107 @@
+.sidebar{
+    position: fixed;
+    width: 25vw;
+    height: 100vh;
+    background-color: rgb(29, 34, 34);
+    z-index: 10;
+    right: -24vw;
+    transition: 0.3s;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar:hover{
+    right: 0vw;
+}
+
+.sidebar-card-container{
+    position: absolute;
+    width: 23vw;
+    height: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.sidebar-card{
+    width: 23vw;
+    height: 10vh;
+    background-color: rgb(15, 16, 16);
+    margin-bottom: 5px;
+    margin-top: 5px;
+    border-radius: 1vw;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s;
+}
+
+.sidebar-card:hover{
+    background-color: rgb(30, 32, 32);
+    cursor: pointer;
+}
+
+.sidebar-card-content{
+    position: absolute;
+    width: 23vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-card-content h5 {
+    color: white;
+}
+
+.sidebar-city-name{
+    margin-left: 1vw;
+}
+
+.sidebar-card-right{
+    display: flex;
+    margin-left: 0px;
+    justify-content: center;
+    position: absolute;
+    right : 0px;
+    margin-right: 1vw;
+}
+
+.sidebar-card-right h5{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.sidebar-card-top{
+    position: absolute;
+    width:100%;
+    height: 3vw;
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.sidebar-card-bottom{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 3vw;
+    /* background-color: aquamarine; */
+    font-size: 0.8vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar-card-bottom span{
+    margin-left: 0.2vw;
+    margin-right : 0.2vw;
+}
